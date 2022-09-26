@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+#header-section {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(20, 183, 150, .7)) ,url("../images/banner.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+#navLogo-section{
+    display: flex;
+    justify-content: space-between;
+}
+#logo img {
+    width: 180px;
+    margin: 1.5rem 3rem;
+}
+#side-navbar {
+    background-color: rgba(20, 183, 150, .5);
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    transition: .7s;
+}
+#side-navbar ul {
+    margin-top: 3rem;
+}
+#side-navbar ul li{
+    padding: 1.3rem;
+    
+}
+#side-navbar ul li a{
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+#menu-btn{
+    position: fixed;
+    right: 3rem;
+    top: 2rem;
+    transition: .5s;
+}
+#menu-btn img{
+    width: 30px;
+    cursor: pointer;
+}
+#header-text{
+    text-align: center;
+    margin-top: 8rem;
+    color: #fff;
+}
+#header-text h1{
+    font-size: 100px;
+    margin-bottom: .7rem;
+}
+#header-text p{
+    font-size: 1.4rem;
+}
+#header-btn{
+    margin-top: 1.5rem;
+}
+#header-btn a{
+    display: inline-block;
+    width: 150px;
+    padding: .8rem;
+    font-size: 1.2rem;
+    margin-right: .6rem;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    transition: .7s;
+    z-index: 1;
+}
+#header-btn a span{
+    background-color: #fff;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: -1;
+}
+#header-btn a:hover span {
+    width: 100%;
+}
+#header-btn a:hover{
+    color: black;
+    z-index: 2;
+}
