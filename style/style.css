@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 #logo img {
     width: 180px;
     margin: 1.5rem 3rem;
@@ -45,9 +46,12 @@
     right: 3rem;
     top: 2rem;
     transition: .5s;
+    background-color: rgba(20, 183, 150, .5);
+    padding: .5rem;
+    border-radius: 10px;
 }
 #menu-btn img{
-    width: 30px;
+    width: 25px;
     cursor: pointer;
 }
 #header-text{
@@ -95,4 +99,130 @@
 #header-btn a:hover{
     color: black;
     z-index: 2;
+}
+.features, .services{
+    margin: 3rem;
+}
+.title-header, .title-header{
+    text-align: center;
+}
+.title-header h3, .title-header h3{
+    font-size: 2rem;
+    color:rgb(20, 183, 150);
+    text-transform: uppercase;
+    margin: .5rem;
+    position: relative;
+    display: inline-block;
+}
+.title-header h3::after, .title-header h3::after{
+    content: "";
+    width: 3rem;
+    height: 2rem;
+    background: linear-gradient(rgb(20, 183, 150), #fff);
+    position: absolute;
+    top: -1.4rem;
+    left: .4rem;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.title-header h1, .title-header h1{
+    font-size: 3rem;
+}
+.features-box{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    margin: 1rem;
+}
+.features-section{
+    padding-top: 3rem;
+}
+.inner-section{
+    margin: 2rem;
+    padding-left: 3rem;
+}
+.inner-section h1{
+    color:rgb(20, 183, 150);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.features-icon i{
+    font-size: 40px;
+    color: rgb(20, 183, 150);
+    border: 1px solid rgb(20, 183, 150);
+    padding: .5rem;
+    border-radius: 10px;
+
+}
+.features-descr{
+    display: flex;
+    gap: 1rem;
+    
+}
+.features-text {
+    padding-top: .2rem;
+}
+.features-img {
+    padding: 2rem;
+    
+}
+.features-img img{
+    width: 70%;
+    border-radius: 1rem;
+}
+.services {
+    background-color: #EDEDEC;
+    padding: 3rem;
+}
+.services-box{
+    margin: 3rem 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.single-service {
+    position: relative;
+}
+.single-service img{
+    width: 100%;
+    border-radius: 10px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(20, 183, 150, .7));
+    opacity: 0;
+    cursor: pointer;
+    transition: 2s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
+.service-description{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 80%;
+    color: #fff;
+    opacity: 0;
+    transition: 3s;
+}
+.single-service:hover .service-description{
+    opacity: 1;
+    top: 20%;
+}
+.service-description h2, .service-description p{
+    margin: 1rem;
+}
+hr{
+    height: 2px;
+    background-color: #fff;
+    margin-left: 20px;
+}
+.service-description h2{
+    text-align: center;
 }
